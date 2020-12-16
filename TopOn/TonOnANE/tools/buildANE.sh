@@ -203,23 +203,30 @@ fyber="IASDKCore.framework IASDKMRAID.framework IASDKResources.bundle/ IASDKVide
 
 
 cp ./ios/libTopOnSDK.a tmp
-cp ./ios/libTopOnSDK-iphonesimulator.a tmp
+#cp ./ios/libTopOnSDK-iphonesimulator.a tmp
 
-
+#cp ./Android-ARM/anebridge.jar tmp
+#cp ./Android-ARM/jinchanAdapter.jar tmp
+#cp ./Android-ARM/jinchanAdPlugin.jar tmp
+#cp ./Android-ARM/jinchanPlugin-release.jar tmp
+#cp ./Android-ARM/jinchanRouter-release.jar tmp
+\cp -rf Android-ARM tmp
 cd tmp
 
 
 #test
- pathString="${AnyThink} ${mintegral} ${toutiao}"
+# pathString="${AnyThink} ${mintegral} ${toutiao}"
 
-#pathString="${admob} ${AnyThink} ${mintegral} ${gdt} ${unity} ${toutiao} ${baidu} ${applovin} ${facebook} ${ironsource} ${maio} ${nend} ${fyber}"
+pathString="${admob} ${AnyThink} ${mintegral} ${gdt} ${unity} ${toutiao} ${baidu} ${applovin} ${facebook} ${ironsource} ${maio} ${nend} ${fyber}"
 
 unzip ./TopOnAdvertLib.swc
 
 
-adt -package -target ane ../TopOnAdvert.ane ../extension.xml -swc TopOnAdvertLib.swc -platform iPhone-ARM -platformoptions ../platformoptions.xml library.swf ${pathString} libTopOnSDK.a
 
-#-platform iPhone-x86 -platformoptions ../platformoptions.xml library.swf ${pathString} libTopOnSDK-iphonesimulator.a
+#adt -package -target ane ../TopOnAdvert.ane ../extension.xml -swc TopOnAdvertLib.swc -platform iPhone-ARM -platformoptions ../platformoptions.xml library.swf ${pathString} libTopOnSDK.a -platform Android-ARM anebridge.jar jinchanAdapter.jar jinchanAdPlugin.jar jinchanPlugin-release.jar jinchanRouter-release.jar library.swf -platformoptions ../android-platform-option.xml
+
+adt -package -target ane ../TopOnAdvert.ane ../extension.xml -swc TopOnAdvertLib.swc -platform iPhone-ARM -platformoptions ../platformoptions.xml library.swf ${pathString} libTopOnSDK.a -platform Android-ARM -C Android-ARM .  -platformoptions ../android-platform-option.xml
+
 cd ..
 
 

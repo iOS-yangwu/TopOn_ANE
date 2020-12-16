@@ -106,8 +106,7 @@ void TopOnAdvertANEDispatchStatusEventAsyn(NSString  * type ,NSString *jsonStrin
     const uint8_t* ane_type = (const uint8_t*)cTypeString;
     const uint8_t* ane_params = (const uint8_t*) cJsonString;
     
-    FREDispatchStatusEventAsync(TopOnANEEventContext,ane_type,
-                                ane_params);
+    FREDispatchStatusEventAsync(TopOnANEEventContext,ane_type,ane_params);
 }
 
 

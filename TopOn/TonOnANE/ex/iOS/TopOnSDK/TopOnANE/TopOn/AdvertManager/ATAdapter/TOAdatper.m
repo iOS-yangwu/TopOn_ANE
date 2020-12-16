@@ -27,6 +27,7 @@ ATRewardedVideoDelegate,
 ATBannerDelegate>
 
 
+
 @property(nonatomic, strong)NSString *nativeBannerUnitID;
 
 @property(nonatomic, strong)NSString *bannerUnitID;
@@ -313,19 +314,23 @@ ATBannerDelegate>
     if ([self.bannerUnitID isEqualToString:placementID]) {
         
         TopOnAdvertSendANEMessage(BannerLoadFail,kTopOnBannerCode,@"",@"");
+        UnitySendMessage("AdObject", "TOBannerAdLoadFail", "");
         
     }else if ([self.ivUnitID isEqualToString:placementID]){
         
         TopOnAdvertSendANEMessage(InterstitialLoadFail,kTopOnIntersCode,@"",@"");
+        UnitySendMessage("AdObject", "TOInterstitialAdLoadFail", "");
         
     }else if ([self.rvUnitID isEqualToString:placementID]){
         
         TopOnAdvertSendANEMessage(VideoLoadFail,kTopOnVideoCode,@"",@"");
+        UnitySendMessage("AdObject", "TOVideoAdLoadFail", "");
 
+        
     }else if ([self.nativeUnitID isEqualToString:placementID]){
         
         TopOnAdvertSendANEMessage(NativeLoadFail,kTopOnNativeCode,@"",@"");
-        
+        UnitySendMessage("AdObject", "TONativeAdLoadFail", "");
     }
 }
 
@@ -334,17 +339,22 @@ ATBannerDelegate>
     if ([self.bannerUnitID isEqualToString:placementID]) {
         
         TopOnAdvertSendANEMessage(BannerDidLoad,kTopOnBannerCode,@"",@"");
-        
+        UnitySendMessage("AdObject", "TOBannerAdLoad", "");
+
     }else if ([self.ivUnitID isEqualToString:placementID]){
         
         TopOnAdvertSendANEMessage(InterstitialDidLoad,kTopOnIntersCode,@"",@"");
-        
+        UnitySendMessage("AdObject", "TOInterstitialAdLoad", "");
+
     }else if ([self.rvUnitID isEqualToString:placementID]){
         
         TopOnAdvertSendANEMessage(VideoDidLoad,kTopOnVideoCode,@"",@"");
-        
+        UnitySendMessage("AdObject", "TOVideoAdLoaded", "");
+
     }else if ([self.nativeUnitID isEqualToString:placementID]){
         
+        UnitySendMessage("AdObject", "TONativeAdLoaded", "");
+
     }else{
         
     }
@@ -355,10 +365,15 @@ ATBannerDelegate>
 - (void)rewardedVideoDidClickForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(VideoCilck,kTopOnVideoCode,@"",@"");
+    UnitySendMessage("AdObject", "TOVideoAdPlayClicked", "");
+
 }
 
 
 - (void)rewardedVideoDidCloseForPlacementID:(NSString *)placementID rewarded:(BOOL)rewarded extra:(NSDictionary *)extra {
+
+    
+    UnitySendMessage("AdObject", "TOVideoAdPlayClosed", "");
 
     if (self.onReward) {
         
@@ -387,26 +402,33 @@ ATBannerDelegate>
     
     self.onReward = YES;
     
+    UnitySendMessage("AdObject", "TOVideoAdDidRewardedSuccess", "");
+
+    
 }
 
 
 
 - (void)rewardedVideoDidEndPlayingForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
+    UnitySendMessage("AdObject", "TOVideoAdPlayEnd", "");
+
 }
 
 
 - (void)rewardedVideoDidFailToPlayForPlacementID:(NSString *)placementID error:(NSError *)error extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(VideoShowFail, kTopOnVideoCode,@"",@"");
-    
+    UnitySendMessage("AdObject", "TOVideoAdPlayFail", "");
+
 }
 
 
 - (void)rewardedVideoDidStartPlayingForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(VideoShow,kTopOnVideoCode,@"",@"");
-    
+    UnitySendMessage("AdObject", "TOVideoAdPlayStart", "");
+
 }
 
 #pragma mark - interstitial delegate
@@ -414,25 +436,30 @@ ATBannerDelegate>
 - (void)interstitialDidClickForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(InterstitialClick,kTopOnIntersCode,@"",@"");
-    
+    UnitySendMessage("AdObject", "TOInterstitialAdClick", "");
+
 }
 
 
 - (void)interstitialDidCloseForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(InterstitialClose,kTopOnIntersCode,@"",@"");
-    
+    UnitySendMessage("AdObject", "TOInterstitialAdClose", "");
+
 }
 
 
 - (void)interstitialDidEndPlayingVideoForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
+    UnitySendMessage("AdObject", "TOInterstitialAdsEndPlaying", "");
+
 }
 
 
 - (void)interstitialDidFailToPlayVideoForPlacementID:(NSString *)placementID error:(NSError *)error extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(InterstitialShowFail,kTopOnIntersCode,@"",@"");
+    UnitySendMessage("AdObject", "TOInterstitialAdFailedToPlay", "");
 
 }
 
@@ -440,17 +467,22 @@ ATBannerDelegate>
 - (void)interstitialDidShowForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(InterstitialShow,kTopOnIntersCode,@"",@"");
-    
+    UnitySendMessage("AdObject", "TOInterstitialAdShow", "");
+
 }
 
 
 - (void)interstitialDidStartPlayingVideoForPlacementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
+    UnitySendMessage("AdObject", "TOInterstitialAdsStartPlayVideo", "");
+
 }
 
 
 - (void)interstitialFailedToShowForPlacementID:(NSString *)placementID error:(NSError *)error extra:(NSDictionary *)extra {
     
+    UnitySendMessage("AdObject", "TOInterstitialAdsShowFail", "");
+
 }
 
 
@@ -459,11 +491,15 @@ ATBannerDelegate>
 -(void) didFinishLoadingNativeBannerAdWithPlacementID:(NSString *)placementID{
     
     TopOnAdvertSendANEMessage(NativeBannerDidLoad,kTopOnNativeBannerCode,@"",@"");
+    UnitySendMessage("AdObject", "TONativeBannerAdLoad", "");
+
 }
 
 -(void) didFailToLoadNativeBannerAdWithPlacementID:(NSString*)placementID error:(NSError*)error{
     
     TopOnAdvertSendANEMessage(NativeBannerLoadFail,kTopOnNativeBannerCode,@"",@"");
+    UnitySendMessage("AdObject", "TONativeBannerAdLoadFail", "");
+
 }
 
 
@@ -482,6 +518,8 @@ ATBannerDelegate>
 - (void)didClickNativeBannerAdInView:(ATNativeBannerView *)bannerView placementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(NativeBannerClick,kTopOnNativeBannerCode,@"",@"");
+    UnitySendMessage("AdObject", "TONativeBannerAdDidClick", "");
+
 }
 
 
@@ -493,6 +531,8 @@ ATBannerDelegate>
 - (void)didShowNativeBannerAdInView:(ATNativeBannerView *)bannerView placementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(NativeBannerDidShow,kTopOnNativeBannerCode,@"",@"");
+    UnitySendMessage("AdObject", "TONativeBannerAdDidShow", "");
+
 }
 
 #pragma mark - banner delegate
@@ -503,11 +543,15 @@ ATBannerDelegate>
 -(void) bannerView:(ATBannerView*)bannerView didShowAdWithPlacementID:(NSString*)placementID extra:(NSDictionary *)extra{
     
     TopOnAdvertSendANEMessage(BannerDidShow,kTopOnBannerCode,@"",@"");
+    UnitySendMessage("AdObject", "TOBannerAdDidShow", "");
+
 }
 
 -(void) bannerView:(ATBannerView*)bannerView didClickWithPlacementID:(NSString*)placementID extra:(NSDictionary *)extra{
     
     TopOnAdvertSendANEMessage(BannerClick,kTopOnBannerCode,@"",@"");
+    UnitySendMessage("AdObject", "TOBannerAdDidClick", "");
+
 }
 
 -(void) bannerView:(ATBannerView*)bannerView didAutoRefreshWithPlacement:(NSString*)placementID extra:(NSDictionary *)extra{
@@ -517,7 +561,8 @@ ATBannerDelegate>
 -(void) bannerView:(ATBannerView*)bannerView didTapCloseButtonWithPlacementID:(NSString*)placementID extra:(NSDictionary*)extra{
     
     TopOnAdvertSendANEMessage(BannerClose,kTopOnBannerCode,@"",@"");
-    
+    UnitySendMessage("AdObject", "TOBannerAdDidClickCloseButton", "");
+
 }
 
 #pragma mark - native delegate
@@ -525,6 +570,7 @@ ATBannerDelegate>
 - (void)didClickNativeAdInAdView:(ATNativeADView *)adView placementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(NativeClick, kTopOnNativeCode,@"",@"");
+    UnitySendMessage("AdObject", "TONativeAdDidClick", "");
 
 }
 
@@ -549,7 +595,8 @@ ATBannerDelegate>
 - (void)didShowNativeAdInAdView:(ATNativeADView *)adView placementID:(NSString *)placementID extra:(NSDictionary *)extra {
     
     TopOnAdvertSendANEMessage(NativeDidShow, kTopOnNativeCode,@"",@"");
-    
+    UnitySendMessage("AdObject", "TONativeAdDidShow", "");
+
     adView.mainImageView.hidden = [adView isVideoContents];
 
 }

@@ -90,7 +90,6 @@
 		66B566D7228A65A20012F5A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B566D6228A65A20012F5A6 /* UIKit.framework */; };
 		66B566D9228A65AB0012F5A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B566D8228A65AB0012F5A6 /* Foundation.framework */; };
 		66B566DB228A65B40012F5A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B566DA228A65B40012F5A6 /* CoreGraphics.framework */; };
-		66B566DF228A69C70012F5A6 /* TOAdvertANEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B566DE228A69C70012F5A6 /* TOAdvertANEUtils.m */; };
 		66B566E4228A6DEF0012F5A6 /* TOAdvertANE.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B566E3228A6DEF0012F5A6 /* TOAdvertANE.m */; };
 		66B566E5228A98670012F5A6 /* TOAdvertManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66B565A8228A625C0012F5A6 /* TOAdvertManager.h */; };
 		66B566E7228BBB310012F5A6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5659E228A625C0012F5A6 /* Reachability.m */; };
@@ -98,6 +97,7 @@
 		66B566FB228E90150012F5A6 /* NSDictionary+obj.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B566FA228E90150012F5A6 /* NSDictionary+obj.m */; };
 		66B74B78246A8662006B7948 /* AdmobBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B74B76246A8661006B7948 /* AdmobBannerView.m */; };
 		66B74B79246A8662006B7948 /* AdmobBannerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66B74B77246A8662006B7948 /* AdmobBannerManager.mm */; };
+		66E86BFF2588B82C00461C96 /* TOAdvertANEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B566DE228A69C70012F5A6 /* TOAdvertANEUtils.m */; };
 		66F19B1D2372D815004540CE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F19B1C2372D815004540CE /* AudioToolbox.framework */; };
 		66F19B1F2372D824004540CE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F19B1E2372D824004540CE /* CFNetwork.framework */; };
 		66F19B212372D873004540CE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F19B202372D873004540CE /* CoreMedia.framework */; };
@@ -824,6 +824,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E86BFF2588B82C00461C96 /* TOAdvertANEUtils.m in Sources */,
 				66573213256E3C0600F92E66 /* TOAdvertManager+banner.m in Sources */,
 				66B566E7228BBB310012F5A6 /* Reachability.m in Sources */,
 				66191D8F249327A800303009 /* UIImage+Additions.m in Sources */,
@@ -851,7 +852,6 @@
 				66202B6B238F9E5A007BAB4B /* MASConstraint.m in Sources */,
 				66B565F3228A625C0012F5A6 /* TOAdatper.m in Sources */,
 				66B565F0228A625C0012F5A6 /* TOHTTPParameter.m in Sources */,
-				66B566DF228A69C70012F5A6 /* TOAdvertANEUtils.m in Sources */,
 				66B566E4228A6DEF0012F5A6 /* TOAdvertANE.m in Sources */,
 				66B565FB228A625C0012F5A6 /* MJExtensionConst.m in Sources */,
 				66B565FE228A625C0012F5A6 /* NSString+MJExtension.m in Sources */,

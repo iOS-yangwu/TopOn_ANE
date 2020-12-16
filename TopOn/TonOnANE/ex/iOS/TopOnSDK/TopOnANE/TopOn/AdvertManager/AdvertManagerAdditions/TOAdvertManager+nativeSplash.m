@@ -11,6 +11,7 @@
 #import <objc/runtime.h>
 #import "TOAdvertANEUtils.h"
 #import "TOHTTPParameter.h"
+#import "TOAdatper.h"
 
 static NSString *backgroundTimeKey = @"backgroundTimeKey";
 static void *backgroundViewKey = &backgroundViewKey;

@@ -22,11 +22,6 @@
 #define kUserDefault            [NSUserDefaults standardUserDefaults]
 #define kWillEnterBackground  @"kWillEnterBackground"
 
-
-//#define kSettingURL       @"https://server.-.cn/api/v1/batch"
-//#define kGDPRURL          @"https://server.-.cn/api/v1/global"
-//#define kDataReportURL    @"https://server.-.cn/report"
-
 //广告上次展示时间
 #define kBannerLastShowTime @"kBannerLastShowTime"
 

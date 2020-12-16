@@ -183,24 +183,6 @@ void TODelegateMapping(SEL oldSEL,SEL defaultSEL, SEL newSEL)
     
 }
 
- void DelegateMapping(SEL oldSEL,SEL defaultSEL, SEL newSEL)
-{
-    Class aClass = objc_getClass("CTAppController");
-    if ( aClass == 0 )
-    {
-        
-        return;
-    }
-    Class bClass = [TOAdvertManager class];
-    class_addMethod(aClass, newSEL, class_getMethodImplementation(bClass, newSEL),nil);
-    class_addMethod(aClass, oldSEL, class_getMethodImplementation(bClass, defaultSEL),nil);
-    
-    Method oldMethod = class_getInstanceMethod(aClass, oldSEL);
-    Method newMethod = class_getInstanceMethod(aClass, newSEL);
-    method_exchangeImplementations(oldMethod, newMethod);
-    
-}
-
 
 + (void)load {
     

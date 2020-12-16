@@ -60,18 +60,18 @@
     <packagedDependencies>
         
         <!-- Admob-->
-<!--        <packagedDependency>GoogleMobileAds.framework</packagedDependency>-->
-<!--        <packagedDependency>PersonalizedAdConsent.framework</packagedDependency>-->
-<!--        <packagedDependency>GoogleAppMeasurement.framework</packagedDependency>-->
-<!--        <packagedDependency>UserMessagingPlatform.framework</packagedDependency>-->
-<!--        <packagedDependency>GoogleUtilities.framework</packagedDependency>-->
-<!--        <packagedDependency>nanopb.framework</packagedDependency>-->
-<!--        <packagedDependency>PromisesObjC.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkAdmobBannerAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkAdmobInterstitialAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkAdmobRewardedVideoAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkAdmobNativeAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkAdmobSplashAdapter.framework</packagedDependency>-->
+        <packagedDependency>GoogleMobileAds.framework</packagedDependency>
+        <packagedDependency>PersonalizedAdConsent.framework</packagedDependency>
+        <packagedDependency>GoogleAppMeasurement.framework</packagedDependency>
+        <packagedDependency>UserMessagingPlatform.framework</packagedDependency>
+        <packagedDependency>GoogleUtilities.framework</packagedDependency>
+        <packagedDependency>nanopb.framework</packagedDependency>
+        <packagedDependency>PromisesObjC.framework</packagedDependency>
+        <packagedDependency>AnyThinkAdmobBannerAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkAdmobInterstitialAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkAdmobRewardedVideoAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkAdmobNativeAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkAdmobSplashAdapter.framework</packagedDependency>
         
         <!-- AnyThink-->
         <packagedDependency>AnyThinkSDK.framework</packagedDependency>
@@ -82,10 +82,10 @@
         <packagedDependency>AnyThinkSplash.framework</packagedDependency>
     
         <!-- UnityAds 2 -->
-<!--        <packagedDependency>UnityAds.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkUnityAdsInterstitialAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkUnityAdsRewardedVideoAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkUnityAdsBannerAdapter.framework</packagedDependency>-->
+        <packagedDependency>UnityAds.framework</packagedDependency>
+        <packagedDependency>AnyThinkUnityAdsInterstitialAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkUnityAdsRewardedVideoAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkUnityAdsBannerAdapter.framework</packagedDependency>
         
         <!-- VungleS 3 -->
 <!--        <packagedDependency>VungleSDK.framework</packagedDependency>-->
@@ -94,19 +94,19 @@
 <!--        <packagedDependency>AnyThinkVungleBannerAdapter.framework</packagedDependency>-->
         
         <!-- AppLovin 4-->
-<!--        <packagedDependency>AppLovinSDK.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkApplovinBannerAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkApplovinInterstitialAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkApplovinRewardedVideoAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkApplovinNativeAdapter.framework</packagedDependency>-->
+        <packagedDependency>AppLovinSDK.framework</packagedDependency>
+        <packagedDependency>AnyThinkApplovinBannerAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkApplovinInterstitialAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkApplovinRewardedVideoAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkApplovinNativeAdapter.framework</packagedDependency>
 
         <!-- GDT 5-->
         
-<!--        <packagedDependency>AnyThinkGDTBannerAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkGDTInterstitialAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkGDTRewardedVideoAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkGDTNativeAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkGDTSplashAdapter.framework</packagedDependency>-->
+        <packagedDependency>AnyThinkGDTBannerAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkGDTInterstitialAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkGDTRewardedVideoAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkGDTNativeAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkGDTSplashAdapter.framework</packagedDependency>
         
         
         <!-- Mintegral 6-->
@@ -137,26 +137,26 @@
 
         
         <!-- IronSource 8-->
-<!--        <packagedDependency>IronSource.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkIronSourceInterstitialAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkIronSourceRewardedVideoAdapter.framework</packagedDependency>-->
+        <packagedDependency>IronSource.framework</packagedDependency>
+        <packagedDependency>AnyThinkIronSourceInterstitialAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkIronSourceRewardedVideoAdapter.framework</packagedDependency>
 
         <!-- baidu 7-->
-<!--        <packagedDependency>BaiduMobAdSDK.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkBaiduBannerAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkBaiduInterstitialAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkBaiduRewardedVideoAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkBaiduNativeAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkBaiduSplashAdapter.framework</packagedDependency>-->
+        <packagedDependency>BaiduMobAdSDK.framework</packagedDependency>
+        <packagedDependency>AnyThinkBaiduBannerAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkBaiduInterstitialAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkBaiduRewardedVideoAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkBaiduNativeAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkBaiduSplashAdapter.framework</packagedDependency>
         
     
         <!-- Facebook 9-->
-<!--        <packagedDependency>FBAudienceNetwork.framework</packagedDependency>-->
-<!--        <packagedDependency>FBSDKCoreKit.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkFacebookNativeAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkFacebookInterstitialAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkFacebookRewardedVideoAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkFacebookBannerAdapter.framework</packagedDependency>-->
+        <packagedDependency>FBAudienceNetwork.framework</packagedDependency>
+        <packagedDependency>FBSDKCoreKit.framework</packagedDependency>
+        <packagedDependency>AnyThinkFacebookNativeAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkFacebookInterstitialAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkFacebookRewardedVideoAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkFacebookBannerAdapter.framework</packagedDependency>
         
         <!-- adcolony 10 -->
         
@@ -166,29 +166,30 @@
         
         <!-- maio 11-->
                
-<!--       <packagedDependency>Maio.framework</packagedDependency>-->
-<!--       <packagedDependency>AnyThinkMaioInterstitialAdapter.framework</packagedDependency>-->
-<!--       <packagedDependency>AnyThinkMaioRewardedVideoAdapter.framework</packagedDependency>-->
+       <packagedDependency>Maio.framework</packagedDependency>
+       <packagedDependency>AnyThinkMaioInterstitialAdapter.framework</packagedDependency>
+       <packagedDependency>AnyThinkMaioRewardedVideoAdapter.framework</packagedDependency>
        
        <!-- nend 12-->
                
-<!--       <packagedDependency>NendAd.framework</packagedDependency>-->
-<!--       <packagedDependency>AnyThinkNendBannerAdapter.framework</packagedDependency>-->
-<!--       <packagedDependency>AnyThinkNendInterstitialAdapter.framework</packagedDependency>-->
-<!--       <packagedDependency>AnyThinkNendNativeAdapter.framework</packagedDependency>-->
-<!--       <packagedDependency>AnyThinkNendRewardedVideoAdapter.framework</packagedDependency>-->
+       <packagedDependency>NendAd.framework</packagedDependency>
+       <packagedDependency>AnyThinkNendBannerAdapter.framework</packagedDependency>
+       <packagedDependency>AnyThinkNendInterstitialAdapter.framework</packagedDependency>
+       <packagedDependency>AnyThinkNendNativeAdapter.framework</packagedDependency>
+       <packagedDependency>AnyThinkNendRewardedVideoAdapter.framework</packagedDependency>
        
         
         <!-- fyber 13 -->
-<!--        <packagedDependency>IASDKCore.framework</packagedDependency>-->
-<!--        <packagedDependency>IASDKMRAID.framework</packagedDependency>-->
-<!--        <packagedDependency>IASDKVideo.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkFyberBannerAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkFyberRewardedVideoAdapter.framework</packagedDependency>-->
-<!--        <packagedDependency>AnyThinkFyberInterstitialAdapter.framework</packagedDependency>-->
+        <packagedDependency>IASDKCore.framework</packagedDependency>
+        <packagedDependency>IASDKMRAID.framework</packagedDependency>
+        <packagedDependency>IASDKVideo.framework</packagedDependency>
+        <packagedDependency>AnyThinkFyberBannerAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkFyberRewardedVideoAdapter.framework</packagedDependency>
+        <packagedDependency>AnyThinkFyberInterstitialAdapter.framework</packagedDependency>
         
     </packagedDependencies>
     
+  
 </platform>
 
 
