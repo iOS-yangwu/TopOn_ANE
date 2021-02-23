@@ -33,7 +33,7 @@
 		665731CC256D01DA00F92E66 /* AnyThinkNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665731C6256D01D900F92E66 /* AnyThinkNative.framework */; };
 		66573213256E3C0600F92E66 /* TOAdvertManager+banner.m in Sources */ = {isa = PBXBuildFile; fileRef = 66573212256E3C0600F92E66 /* TOAdvertManager+banner.m */; };
 		666082AA236A86A70029F94F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666082A9236A86A60029F94F /* CoreFoundation.framework */; };
-		668157A5256FB490008230DE /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681579A256FB1B9008230DE /* libGDTMobSDK.a */; };
+		667B514925A30B87003B8F51 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681579A256FB1B9008230DE /* libGDTMobSDK.a */; };
 		66938F6F236FD2F300A3BD48 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66938F6E236FD2F200A3BD48 /* libsqlite3.tbd */; };
 		66938F71236FD31000A3BD48 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66938F70236FD31000A3BD48 /* libc++.tbd */; };
 		66938F73236FD31600A3BD48 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66938F72236FD31600A3BD48 /* libxml2.tbd */; };
@@ -307,7 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				668157A5256FB490008230DE /* libGDTMobSDK.a in Frameworks */,
+				667B514925A30B87003B8F51 /* libGDTMobSDK.a in Frameworks */,
 				665731C9256D01DA00F92E66 /* AnyThinkSDK.framework in Frameworks */,
 				66F19B292372D8C8004540CE /* SystemConfiguration.framework in Frameworks */,
 				66F19B272372D8AE004540CE /* Security.framework in Frameworks */,

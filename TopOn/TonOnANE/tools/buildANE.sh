@@ -26,6 +26,7 @@ cp -r ../ex/iOS/TopOnSDK/TopOnANE/Thirds/Admob/UserMessagingPlatform.framework t
 
 admob="GoogleMobileAds.framework AnyThinkAdmobBannerAdapter.framework AnyThinkAdmobInterstitialAdapter.framework AnyThinkAdmobRewardedVideoAdapter.framework AnyThinkAdmobNativeAdapter.framework PersonalizedAdConsent.framework AnyThinkAdmobSplashAdapter.framework GoogleAppMeasurement.framework UserMessagingPlatform.framework GoogleUtilities.framework nanopb.framework PromisesObjC.framework"
 
+
 #AnyThink
 cp -r ../ex/iOS/TopOnSDK/TopOnANE/Thirds/Anythink/AnyThinkSDK.framework tmp
 cp -r ../ex/iOS/TopOnSDK/TopOnANE/Thirds/Anythink/AnyThinkBanner.framework tmp
@@ -215,9 +216,9 @@ cd tmp
 
 
 #test
-# pathString="${AnyThink} ${mintegral} ${toutiao}"
+ pathString="${AnyThink} ${mintegral}"
 
-pathString="${admob} ${AnyThink} ${mintegral} ${gdt} ${unity} ${toutiao} ${baidu} ${applovin} ${facebook} ${ironsource} ${maio} ${nend} ${fyber}"
+#pathString="${admob} ${AnyThink} ${mintegral} ${gdt} ${unity} ${toutiao} ${baidu} ${applovin} ${facebook} ${ironsource} ${maio} ${nend} ${fyber}"
 
 unzip ./TopOnAdvertLib.swc
 
@@ -225,7 +226,7 @@ unzip ./TopOnAdvertLib.swc
 
 #adt -package -target ane ../TopOnAdvert.ane ../extension.xml -swc TopOnAdvertLib.swc -platform iPhone-ARM -platformoptions ../platformoptions.xml library.swf ${pathString} libTopOnSDK.a -platform Android-ARM anebridge.jar jinchanAdapter.jar jinchanAdPlugin.jar jinchanPlugin-release.jar jinchanRouter-release.jar library.swf -platformoptions ../android-platform-option.xml
 
-adt -package -target ane ../TopOnAdvert.ane ../extension.xml -swc TopOnAdvertLib.swc -platform iPhone-ARM -platformoptions ../platformoptions.xml library.swf ${pathString} libTopOnSDK.a -platform Android-ARM -C Android-ARM .  -platformoptions ../android-platform-option.xml
+adt -package -target ane ../TopOnAdvert.ane ../extension.xml -swc TopOnAdvertLib.swc -platform iPhone-ARM -platformoptions ../platformoptions.xml library.swf ${pathString} libTopOnSDK.a -platform Android-ARM -C Android-ARM .  -platformoptions ../android-platform-option.xml -platform Android-ARM64 -C Android-ARM .  -platformoptions ../android-platform-option.xml
 
 cd ..
 
